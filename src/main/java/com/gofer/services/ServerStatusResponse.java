@@ -19,16 +19,26 @@ public class ServerStatusResponse implements Serializable{
     @XmlElement(name = "uberRedirectUrl")
     private String uberRedirectUrl;
 
+    @XmlElement(name = "twilioUrl")
+    private String twilioUrl;
+
     @XmlElement(name = "status")
     private String status;
 
+    public String getTwilioUrl() {
+        return twilioUrl;
+    }
 
+    public void setTwilioUrl(String twilioUrl) {
+        this.twilioUrl = twilioUrl;
+    }
 
     @Override
     public String toString() {
         return "ServerStatusResponse{" +
-                "uber='" + uberUrl + '\'' +
+                "uberUrl='" + uberUrl + '\'' +
                 ", uberRedirectUrl='" + uberRedirectUrl + '\'' +
+                ", twilioUrl='" + twilioUrl + '\'' +
                 ", status='" + status + '\'' +
                 '}';
     }
@@ -43,6 +53,7 @@ public class ServerStatusResponse implements Serializable{
         if (uberUrl != null ? !uberUrl.equals(that.uberUrl) : that.uberUrl != null) return false;
         if (uberRedirectUrl != null ? !uberRedirectUrl.equals(that.uberRedirectUrl) : that.uberRedirectUrl != null)
             return false;
+        if (twilioUrl != null ? !twilioUrl.equals(that.twilioUrl) : that.twilioUrl != null) return false;
         return status != null ? status.equals(that.status) : that.status == null;
 
     }
@@ -51,6 +62,7 @@ public class ServerStatusResponse implements Serializable{
     public int hashCode() {
         int result = uberUrl != null ? uberUrl.hashCode() : 0;
         result = 31 * result + (uberRedirectUrl != null ? uberRedirectUrl.hashCode() : 0);
+        result = 31 * result + (twilioUrl != null ? twilioUrl.hashCode() : 0);
         result = 31 * result + (status != null ? status.hashCode() : 0);
         return result;
     }

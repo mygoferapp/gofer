@@ -15,13 +15,15 @@ public class ServerStatus {
     public ServerStatusResponse ping(@PathParam("input") String input, @Context HttpServletRequest req) {
         String remoteHost = req.getServerName();
         int remotePort = req.getServerPort();
-        ServerStatusResponse helloResponse = new ServerStatusResponse();
-        helloResponse.setStatus("running");
+        ServerStatusResponse serverStatusResponse = new ServerStatusResponse();
+        serverStatusResponse.setStatus("running");
         String host = "http://" + remoteHost + ":" + remotePort;
-        helloResponse.setUberUrl(host + "/gofer/servlet");
-        helloResponse.setUberRedirectUrl(host + "/gofer/servlet/ride/redirect");
+        serverStatusResponse.setUberUrl(host + "/gofer/servlet");
+        serverStatusResponse.setUberRedirectUrl(host + "/gofer/servlet/ride/redirect");
+        serverStatusResponse.setUberRedirectUrl(host + "/gofer/servlet/ride/redirect");
+        serverStatusResponse.setTwilioUrl(host + "/gofer/services/OTP?number=");
 
-        return helloResponse;
+        return serverStatusResponse;
     }
 }
 

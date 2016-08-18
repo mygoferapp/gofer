@@ -13,7 +13,6 @@ import com.twilio.sdk.*;
 import com.twilio.sdk.resource.factory.*;
 import com.twilio.sdk.resource.instance.*;
 
-@Path("gofer/OTP")
 public class TwilioOTPSender implements OTP {
 
 	final String AUTH_TOKEN = "a9baad74ef5e3c3c6962bc013350f62e";
