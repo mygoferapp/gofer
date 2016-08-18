@@ -1,4 +1,4 @@
-package com.isc.servlet;
+package com.gofer.services.uber;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;

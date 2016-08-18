@@ -1,4 +1,4 @@
-package com.isc;
+package com.gofer.services;
 
 import static org.junit.Assert.assertEquals;
 

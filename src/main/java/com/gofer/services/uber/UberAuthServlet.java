@@ -1,4 +1,4 @@
-package com.isc.servlet;
+package com.gofer.services.uber;
 
 /**
  * Created by rjaraja on 8/11/16.

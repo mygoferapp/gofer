@@ -1,4 +1,4 @@
-package com.isc;
+package com.gofer.services;
 
 /**
  * Created by rjaraja on 8/11/16.

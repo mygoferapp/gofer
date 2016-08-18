@@ -27,7 +27,7 @@
     <servlet>
         <servlet-name>UberAuthServlet</servlet-name>
         <servlet-class>
-            com.isc.servlet.UberAuthServlet
+            com.gofer.services.uber.UberAuthServlet
         </servlet-class>
         <load-on-startup>1</load-on-startup>
     </servlet>
@@ -38,7 +38,7 @@
     <servlet>
         <servlet-name>OAuth2CallbackServlet</servlet-name>
         <servlet-class>
-            com.isc.servlet.OAuth2CallbackServlet
+            com.gofer.services.uber.OAuth2CallbackServlet
         </servlet-class>
         <load-on-startup>1</load-on-startup>
     </servlet>

@@ -1,11 +1,11 @@
-package com.isc;
+package com.gofer.services;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.ws.rs.*;
 import javax.ws.rs.core.Context;
 import javax.ws.rs.core.Response;
 
-import com.isc.servlet.HelloResponse;
+import com.gofer.services.uber.HelloResponse;
 
 
 @Path("/hello")
