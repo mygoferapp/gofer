@@ -11,7 +11,7 @@ import java.io.Serializable;
  */
 @XmlRootElement(name = "helloresponse", namespace = "com.isc.servlet")
 @XmlAccessorType(XmlAccessType.NONE)
-public class HelloResponse implements Serializable{
+public class ServerStatusResponse implements Serializable{
 
     @XmlElement(name = "uberUrl")
     private String uberUrl;
@@ -26,7 +26,7 @@ public class HelloResponse implements Serializable{
 
     @Override
     public String toString() {
-        return "HelloResponse{" +
+        return "ServerStatusResponse{" +
                 "uber='" + uberUrl + '\'' +
                 ", uberRedirectUrl='" + uberRedirectUrl + '\'' +
                 ", status='" + status + '\'' +
@@ -38,7 +38,7 @@ public class HelloResponse implements Serializable{
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        HelloResponse that = (HelloResponse) o;
+        ServerStatusResponse that = (ServerStatusResponse) o;
 
         if (uberUrl != null ? !uberUrl.equals(that.uberUrl) : that.uberUrl != null) return false;
         if (uberRedirectUrl != null ? !uberRedirectUrl.equals(that.uberRedirectUrl) : that.uberRedirectUrl != null)

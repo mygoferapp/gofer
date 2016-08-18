@@ -22,7 +22,7 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>CXFServlet</servlet-name>
-        <url-pattern>/service/*</url-pattern>
+        <url-pattern>/services/*</url-pattern>
     </servlet-mapping>
     <servlet>
         <servlet-name>UberAuthServlet</servlet-name>
