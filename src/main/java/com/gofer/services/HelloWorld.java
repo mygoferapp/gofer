@@ -5,8 +5,6 @@ import javax.ws.rs.*;
 import javax.ws.rs.core.Context;
 import javax.ws.rs.core.Response;
 
-import com.gofer.services.uber.HelloResponse;
-
 
 @Path("/hello")
 public class HelloWorld {
